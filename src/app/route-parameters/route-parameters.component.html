@@ -1,0 +1,26 @@
+<div class="contentStyle">
+    <h2 class="inTittle">ROUTE PARAMETERS</h2> 
+
+    <ul>
+        <li>User click on any of the course it should navigate to course-details component by sending that course particular ID as a parameter <li> 
+        <img style="width: 70%;margin-top: 15px 0px;" src="../../assets/img/routeparam.PNG">
+        <li>I have created a course list array in course list component and displayed those courses into view.</li>
+        <img style="width: 70%;margin-top: 15px 0px;" src="../../assets/img/courselist2.PNG">
+        <li>As discussed before when the user clicks on any course to navigate the course-details component, so first need to generate the course-details component.</li>
+        <li>to navigate between the component need to create routings.</li>
+        <img style="width: 100%;margin-top: 15px 0px;" src="../../assets/img/courselistroute.PNG">
+        <li>In the course list add the click event and should construct the route URL on that event method, so we need to use the router service.</li>
+        <li>To use the Router service, we should Inject the Router service in the course-list Constructor()</li>
+        <li>Navigating method accepted array called 'Link Parameters Array'(navigate([ ])), It provides all the information to the angular to construct the URL</li>
+        <img style="width: 100%;margin-top: 15px 0px;" src="../../assets/img/editlist.PNG">
+        <br>
+        <br>
+        <li>Where to read the ID details in that component(course-details) we should Inject the  'ActivatedRoute'</li>
+        <img style="width: 100%;margin-top: 15px 0px;" src="../../assets/img/readDetails.PNG">
+        <div class="subContent">
+            <h3>Note:</h3>
+        </div>
+        <li>paramMap is a API, which helps to get the parameters from the URL.</li>
+    </ul>
+
+</div>

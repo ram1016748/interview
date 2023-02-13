@@ -1,0 +1,35 @@
+<div class="contentStyle">
+    <h2 class="inTittle">HTTP - Observables</h2> 
+
+    <ul>
+        <li>Previously example in the service files, we use hardcoded data, but in real-time we can't use the hardcoded data.</li> 
+        <li>In a real-time scenario, data comes from one webserver. So, we must call HTTP requests to the server.</li>
+
+        <div class="subContent">
+            <h3>HTTP Mechanism</h3>
+        </div>
+        <br/>
+        <img style="width: 70%;margin-top: 15px 0px;" src="../../assets/img/httpM.PNG">
+        <br/>
+        <br/>
+        <li>An Observable is a sequence of items that arrive asynchronously overtime.</li>
+        <li>HTTP call (Request) <-> Single item <-> HTTP response.</li>
+        <li>In Angular, an observable is HTTP response which arrives asynchronously.</li>
+        <li>But, that incoming HTTP response (observable) is not ready to use in our application.</li>
+        <li>So, after receiving the observable we need to convert the incoming response into an ARRAY.</li>
+        <li>After conversion into an ARRAY only it is ready to use in our application.</li>
+    </ul>
+
+    <div class="subContent">
+        <h3>Steps to follow In our Example</h3>
+    </div>
+
+    <li>HTTP Get request from StudentService.</li>
+    <li>Receive the Observable and cast it into Student Array.</li>
+    <li>Subscribe to the Observable from Student-list and Student-Details</li>
+    <li>Assign the Student Array to the local variable.</li>
+    <br/>
+    <span style="color: #c72100;background-color: #c5bdbd;">NOTE:</span>
+    <li>RxJS(Reactive Extensions for JavaScript) is an external libray used in Angular to work with Observables.
+
+</div>

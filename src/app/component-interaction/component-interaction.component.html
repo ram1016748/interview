@@ -1,0 +1,33 @@
+<div class="contentStyle">
+    <h2 class="inTittle">Component Interaction</h2> 
+    <div class="subContent">
+        <h3>Sending data to a child component:</h3>
+    </div>
+    <ul>
+        <li>A common pattern in Angular is sharing data between a parent component and one or more child components.</li> 
+        <li>The <span style="color: #c72100;background-color: #c5bdbd;"> @Input() </span> decorator in a child component or directive signifies that the property can receive its value from its parent component.</li>
+       
+       <div>
+        <img style="width: 25%;margin-top: 15px 0px;" src="../../assets/img/component-1.PNG">
+        <span style="margin-left: 20px;"><img style="width: 25%;margin-top: 15px 0px;" src="../../assets/img/component2.PNG"></span>
+       </div> 
+       <li> use the <span style="color: #c72100;background-color: #c5bdbd;">  @Input() </span> decorator in a child component class, first import Input and then decorate the property with <span style="color: #c72100;background-color: #c5bdbd;"> @Input()</span> </li>
+
+        <li style="color: #c72100; list-style-type: none; text-decoration: underline;">Example:</li>
+        <img style="width: 100%;margin-top: 15px 0px;" src="../../assets/img/componentP1.PNG">
+        <div>
+            <img style="width: 40%;margin-top: 15px 0px;" src="../../assets/img/componentP2.PNG">
+            <span style="margin-left: 20px;"><img style="width: 50%;margin-top: 15px 0px;" src="../../assets/img/componentP3.PNG"></span>
+           </div> 
+
+        <div class="subContent">
+            <h3>Sending data to a parent component:</h3>
+        </div>
+        <li><span style="color: #c72100;background-color: #c5bdbd;">@Output()</span> marks a property in a child component as a doorway through which data can travel from the child to the parent.</li> 
+        <img style="width: 40%;margin-top: 15px 0px;" src="../../assets/img/componentO.PNG">
+        <li>The child component uses the <span style="color: #c72100;background-color: #c5bdbd;">@Output()</span> property to raise an event to notify the parent of the change.</li>
+        <li>To raise an event, an <span style="color: #c72100;background-color: #c5bdbd;">@Output()</span> must have the type of <span style="color: #c72100;background-color: #c5bdbd;">EventEmitter</span>, which is a class in <span style="color: #c72100;background-color: #c5bdbd;">@angular/core</span> that you use to emit custom events.</li>
+        <img style="width: 100%;margin-top: 15px 0px;" src="../../assets/img/parent1.PNG">
+        <img style="width: 100%;margin-top: 15px 0px;" src="../../assets/img/parent2.PNG">
+    </ul>
+</div>

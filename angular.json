@@ -87,12 +87,20 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/@clr/icons/clr-icons.min.css",
+              "node_modules/@clr/ui/clr-ui.min.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "../node_modules/@webcomponents/custom-elements/custom-elements.min.js",
+              "../node_modules/@clr/icons/clr-icons.min.js"
+            ]
           }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "2fc14a3f-2db1-4335-97c4-2d4c5a9fa2a8"
   }
 }

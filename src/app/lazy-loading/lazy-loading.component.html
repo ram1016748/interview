@@ -1,0 +1,52 @@
+<div class="contentStyle">
+    <h2 class="inTittle">CHILD ROUTES</h2> 
+
+    <ul>
+        <li> In Angular by default, Modules are eagerly loaded. Means, as soon as the app is loaded all modules are loaded without checking whether they are immediately required to not?</li>
+        <li>Lazy Loading is a design pattern that loads required modules only.</li>
+        <li>Lazy loading helps to keep the initial bundle size smaller, which helps to decrease the load time and increase the performance.</li>
+        <li>In practical most of the applications are made-up with a large number of modules.</li>
+        <li><span style="color: red; font-weight: bold;">EX:-</span> In a shopping mart application, we may use modules like,</li>
+
+    <ul>
+       <li>Users Module:-
+           <ul class="innerUL">
+               <li> User Login (Component)</li>
+               <li>Forgot Password (Component)</li>
+               <li>User profile (Component)</li>
+               <li>Update user profile (Component)</li>
+           </ul>
+       </li>
+       <li>Items Module</li>
+       <li>Order Module</li>
+       <li>Inventory Module</li>
+    </ul>
+
+    <li>Load modules when they are required. that means, when user logged in and when he navigate only, orders and history of orders are visible.</li>
+    <span style="color: red; font-weight: bold;">Two steps to create a Lazy loading feature:-</span>
+    <ul>
+        <li>
+            <ul class="innerUL">
+                <li> Create a feature module.</li>
+                <li>Configure load Children in appRouting </li>
+            </ul>
+        </li>
+     </ul>
+
+     <li>Previously, we need to write the code for LAZY Loading but from angular 8 onwards it run the automatically by running the below command .</li>
+     <li style="color: #c72100;">SYNTAX:
+       <span style="color: #c72100;background-color: #c5bdbd;">ng g m faculty --route faculty --module app.module.ts</span>
+       </li>
+        <img style="width: 100%;margin-top: 15px 0px;" src="../../assets/img/lazy1.PNG">
+        <img style="width: 100%;margin-top: 15px 0px;" src="../../assets/img/lazy2.PNG">
+        <li>It is creating the Faculty component along with faculty-routing-module.ts(routing ) file ,faculty.module.ts(module )file and it is creating the Lazy loading and updated into app.routing.module.ts file.</li>
+        <img style="width: 100%;margin-top: 15px 0px;" src="../../assets/img/lazy4.PNG">
+   
+   <li>When i run the application at that time Faculty component not run the initial application load time. whenever user try to navigate or click to access the Faculty component at that time only it run and display the Output. </li>
+   <img style="width: 100%;margin-top: 15px 0px;" src="../../assets/img/lazy5.PNG">
+    </ul>
+
+
+
+
+</div>

@@ -1,0 +1,31 @@
+<div class="contentStyle">
+    <h2 class="inTittle">Using Service</h2> 
+    <div class="subContent">
+        <h3>DI as a framework:</h3>
+    </div>
+
+    <ul>
+        <li>To use the service, we need to follow below steps.</li> 
+        <ul class="innerUL" style="margin-left: 30px;">
+            <li><span style="color: #c72100;background-color: #c5bdbd;"> Define the studentService class</span> </li>
+            <li><span style="color: #c72100;background-color: #c5bdbd;">Register with Injector</span> </li>
+            <li><span style="color: #c72100;background-color: #c5bdbd;"> Declare as dependency in Student-list and Student-Details components</span> </li>
+            <img style="width: 40%;margin-top: 15px 0px;" src="../../assets/img/injector2.PNG">
+        </ul>
+
+        <br/>
+        <br/>
+        <br/>
+        <ul>
+            <li><span style="color: #c72100;background-color: #c5bdbd;">STEP1:</span> I have created <span style="color: #c72100;background-color: #c5bdbd;">"StudentsService" (ng g s students --skipTests=true)</span></li>
+            <li><span style="color: #c72100;background-color: #c5bdbd;">STEP2:</span>Inside the created service, declare the method and return the data like below.</li>
+            <img style="width: 70%;margin-top: 15px 0px;" src="../../assets/img/service-data.PNG">
+            <li><span style="color: #c72100;background-color: #c5bdbd;">STEP3:</span>Now registered the service in app.module.ts( it is parent Module file, so To register the service here then you can access entire application where ever required for this service data ) file under Providers[ ] and import the same.</li>
+            <img style="width: 70%;margin-top: 15px 0px;" src="../../assets/img/service-Module.PNG">
+            <li><span style="color: #c72100;background-color: #c5bdbd;">STEP4:</span>To use this service in required components, we need to inject the service into the constructor and store that service data into one variable under the ngOninit(Life hok) like below.</li>
+            <img style="width: 70%;margin-top: 15px 0px;" src="../../assets/img/serviceUse.PNG">
+        </ul>
+    
+    </ul>
+
+</div>

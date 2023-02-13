@@ -1,1 +1,64 @@
 /* You can add global styles to this file, and also import other style files */
+body, html {
+    font-family: cursive;
+    margin: 0px;
+    padding: 0px;
+}
+.header.header-2, header.header-2 {
+    background-color: #004c8a;
+}
+.clr-vertical-nav .nav-link.active {
+    color: #e02200;
+    background-color: #303030;
+}
+.clr-vertical-nav {
+    background-color: #ccc;
+    padding-top: 0px;
+    width: 20% !important;
+}
+.nav-content div {
+    display: grid;
+}
+.nav-content {
+    height: 100vh;
+    overflow-y: scroll;
+}
+a.nav-link, a.nav-link.active {
+    line-height: 30px;
+}
+.inTittle {
+    margin-top: 0%;
+    text-align: center;
+    margin-top: 0%;
+    text-align: center;
+    color: #c27b00;
+    text-decoration: underline;
+    font-family: fantasy;
+}
+.contentStyle li {
+    list-style-type: disclosure-closed;
+}
+.subContent h4, .subContent h3 {
+    font-family: revert;
+    font-size: 20px;
+    font-weight: bold;
+    color: #c27b00;
+    text-align: center;
+    text-decoration: underline;
+    margin-top: 15px;
+}
+
+.subContent h3 {
+    font-size: 16px;
+}
+
+.innerUL li {
+    list-style-type: disc;
+}
+.content-area {
+    width: 100%;
+}
+.contentStyle {
+    height: 100vh;
+    overflow-y: scroll;
+}

@@ -1,0 +1,17 @@
+<div class="contentStyle">
+    <h2 class="inTittle">Error Handling</h2> 
+
+    <ul>
+        <li>If we get any exceptions(error) while getting response at that time View is not display anything, so to display the error messages on screen it helps the errorhHandling.</li> 
+        <li>In service.ts file, we have to import catchError. and also we have to pipe that.</li>
+        <li>under errorHandler () we need to through the error message to subscribed components.</li>
+        <img style="width: 70%;margin-top: 15px 0px;" src="../../assets/img/httpError.PNG">
+        <li>In previous case we subscribe the response data into required components  like the same way we need to receive the error as well.</li>
+        <img style="width: 70%;margin-top: 15px 0px;" src="../../assets/img/httpError2.PNG">
+
+        <li>For example, To test the HttpErrorHandling I have update wrong service file and let see what happened after adding the errorHandling. </li>
+        <img style="width: 70%;margin-top: 15px 0px;" src="../../assets/img/HttpError3.PNG">
+
+    </ul>
+
+</div>

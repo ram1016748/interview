@@ -1,0 +1,50 @@
+<div class="contentStyle">
+    <h2 class="inTittle">ROUTE GUARDS:</h2>
+    <ul>
+        <li>Route Guards are used to securing the route paths.</li>
+        <li>We can generate any number of guards based on our application requirement.</li>
+        <li>Whenever we implement a route guard, it will give a Boolean value( True or False).</li>
+        <li>Based on this Boolean value, the Angular route decides if the user should access the route or not?</li>
+        <li style="color: #c72100;">SYNTAX: <br>
+            <span style="color: #c72100;background-color: #c5bdbd;">ng g guard guard-name</span>
+            <div>Inject this guard in our module under providers array.</div>
+        </li>
+    
+        <li style="color: #c72100;">Types Of Guards:</li>
+        <li>
+            <div>There are various types of route guards available.</div>
+            <ul class="innerUL">
+                <li><span style="color: #c72100;background-color: #c5bdbd;">CanActivate</span> - Checks to see if a user can visit a route.</li>
+                <li><span style="color: #c72100; background-color: #c5bdbd;">CanActivateChild</span> - Checks to see if a user can visit route children.</li>
+                <li><span style="color: #c72100; background-color: #c5bdbd;">CanDeactivate </span>- Checks to see if a user can exit a route.</li>
+                <li><span style="color: #c72100;background-color: #c5bdbd;">Resolve</span> - Performs route data retrieval before route activation.</li>
+                <li><span style="color: #c72100;background-color: #c5bdbd;">CanLoad</span> - Checks to see if a user can route to a module that lazy loaded.</li>
+            </ul>
+        </li>
+        <div class="subContent">
+            <h3>Note:</h3>
+            <li>Route Guard resolves to TRUE or FALSE based on Custom logic and Functionality.</li>
+        </div>
+        <li>I have created the admin-home component and generate the admin-access guard as well.</li>
+        <img style="width: 70%;margin-top: 15px 0px;" src="../../assets/img/guard.PNG">
+
+        <li>STEP 1 :-
+            <ul class="innerUL">
+                <li>In Route Guard file for time beeing remove the observables and check the boolean values true or false and observe the web page</li>
+                <img style="width: 70%;margin-top: 15px 0px;" src="../../assets/img/guard2.PNG">
+            </ul>
+        </li>
+        <li>STEP 2 :-
+            <ul class="innerUL">
+                <li>In Route file import and create the path for that component</li>
+                <img style="width: 70%;margin-top: 15px 0px;" src="../../assets/img/guard3.PNG">
+            </ul>
+        </li>
+        <li>STEP 3 :-
+            <ul class="innerUL">
+                <li>In app.module.ts file import and add the same in Providers array</li>
+                <img style="width: 70%;margin-top: 15px 0px;" src="../../assets/img/guard4.PNG">
+            </ul>
+        </li>
+    </ul>
+</div>

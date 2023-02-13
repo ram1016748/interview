@@ -1,0 +1,28 @@
+<div class="contentStyle">
+    <h2 class="inTittle">Routing and Navigation</h2> 
+
+    <ul>
+        <li>Any angular Application is built with multiple components.</li> 
+        <li>Each component has its own view.</li>
+        <li>Based on user action, it may necessary to navigate among the views.</li>
+        <li>For this purpose we use Angular routers.</li>
+        <img style="width: 70%;margin-top: 15px 0px;" src="../../assets/img/routing1.PNG">
+        <li>Generate StudentList and CourseList Components</li>
+        <li>Configure Routes</li>
+        <li>Add Buttons and use directives to navigate.</li>
+        <br>
+        <li>I have generated Students-List and Course-List components like below.</li>
+        <img style="width: 70%;margin-top: 15px 0px;" src="../../assets/img/generateC.PNG">
+        <li>At the time of creation of project, it will ask like do you want routing file or not ? If you select Y it is created under APP folder and If you select NO at that time whenever required the routing must and should manually create routing file.</li>
+        <li>In routing.module.ts file having const Routs array, here we need to add the all routing and each brought declare as Object.</li>
+        <li>To avoid the duplication of component imports, to write the one export const myRoutings array and declare all the components and import the same into app.module.ts file and remove the duplicate imports. </li>
+        <br>
+        <li>See the below snippet, how to add the Routs and how to export those Routs.</li>
+        <img style="width: 50%;margin-top: 15px 0px;" src="../../assets/img/routesC2.PNG">
+        <img style="width: 45%;margin-top: 15px 0px;" src="../../assets/img/routesC2.PNG">
+        <br>
+        <li>In app.component.html add two navigation links and whenever user click the any of component link at that time shows the selected component with different background for user identity purpose and in the URL also add the component name like below.</li>
+        <img style="width: 70%;margin-top: 15px 0px;" src="../../assets/img/routinglist.PNG">
+    </ul>
+
+</div>

@@ -1,0 +1,72 @@
+<div class="contentStyle">
+    <h2 class="inTittle">COMPONENT:</h2>
+    <ul>
+       <li>Components are the main building block for Angular applications. Each component consists of:
+           <ul class="innerUL">
+               <li>An HTML template that declares what renders on the page </li>
+               <li>A Typescript class that defines behavior</li>
+               <li>A CSS selector that defines how the component is used in a template</li>
+               <li>Optionally, CSS styles applied to the template</li>
+           </ul>
+       </li>
+       <li>Creating a component using the Angular CLI
+           <p>To create a component using the Angular CLI</p>
+            <ul class="innerUL">
+                <li>Run the ng generate component <span style="color: #c72100;background-color: #c5bdbd;">component-name</span> command, where <span style="color: #c72100;background-color: #c5bdbd;">component-name</span>  is the name of your new component.</li>
+            </ul>
+        </li>
+        <li>By default, this command creates the following:
+            <ul class="innerUL">
+                <li> A folder named after the component</li>
+                <li>A component file,  <span style="color: #c72100; background-color: #c5bdbd;">component-name.component.ts</span></li>
+                <li>A template file, <span style="color: #c72100; background-color: #c5bdbd;">component-name.component.html</span></li>
+                <li>A CSS file, <span style="color: #c72100;background-color: #c5bdbd;">component-name.component.css</span></li>
+                <li>A testing specification file, <span style="color: #c72100;background-color: #c5bdbd;">component-name.component.spec.ts</span></li>
+        
+            </ul>
+            <ul class="innerUL">
+                <span  style="display: block;"><img style="width: 100% !important;" src="../../assets/img/component-structure.PNG"></span>
+            </ul>
+        </li>
+
+        <div class="subContent">
+            <h3>EXAMPLE:</h3>
+        </div>
+
+        <li>I have created the Student Component like below:
+            <ul class="innerUL">
+                <span  style="display: block;"><img style="width: 100% !important;" src="../../assets/img/component-creationEX.PNG"></span>
+                <li>As we discussed before, I have created the STUDENT component by using the below command.</li>
+                <span style="color: #c72100; background-color: #c5bdbd;">ng g c student</span>
+                <li>It is created the HTML, CSS, TS, SPEC, files under the src/app/student folder and updated the same component into the app. module.ts (If any component does not import into app. module.ts those kinds of components are not rendered on the web, So every component we need to import or updated into the app. module.ts file ).</li>
+                <li>and also same component name updated into under declaration array section. </li>
+                <span  style="display: block;"><img style="width: 100% !important;" src="../../assets/img/appModule.PNG"></span>
+            </ul>
+        </li>
+
+        <div class="subContent">
+            <h3>How to access the component into a webPage?:</h3>
+        </div>
+
+        <li>Component Usage:
+            <p>We can represent selector in " .ts " file for any component in 3 ways.</p>
+             <ul class="innerUL">
+                 <li>Selector: <span style="color: #c72100;background-color: #c5bdbd;">'app-student';</span>
+                <div>In HTML we have to write as, <span style="color: #c72100;background-color: #c5bdbd;">  &lt; app-student &gt;  &lt; /app-student &gt;</span></div>
+                </li>
+
+                <li>Selector: <span style="color: #c72100;background-color: #c5bdbd;">'.app-student';</span>
+                    <div>In HTML we have to write as, <span style="color: #c72100;background-color: #c5bdbd;"> &lt;div class="app-student"&gt; &lt;/div&gt;</span></div>
+                </li>
+
+                <li>Selector: <span style="color: #c72100;background-color: #c5bdbd;">'[app-student]';</span>
+                    <div>In HTML we have to write as, <span style="color: #c72100;background-color: #c5bdbd;"> &lt;div app-student&gt; &lt;/div &gt; </span></div>
+                </li>
+                <span  style="display: block;"><img style="width: 100% !important;" src="../../assets/img/component-display1.PNG"></span>
+                <span  style="display: block;"><img style="width: 100% !important;" src="../../assets/img/component-display2.PNG"></span>
+
+             </ul>
+         </li>
+
+    </ul>
+</div>

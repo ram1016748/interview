@@ -1,0 +1,30 @@
+<div class="contentStyle">
+    <h2 class="inTittle">Error Handling</h2> 
+
+    <ul>
+        <li>First We need to import HTTPClient module into app.module.ts file.</li> 
+        <img style="width: 70%;margin-top: 15px 0px;" src="../../assets/img/http1.PNG">
+        <li>To use service, we should declare HttpClient as dependency in the constructor.</li>
+        <img style="width: 70%;margin-top: 15px 0px;" src="../../assets/img/http2.PNG">
+        <br>
+        <br>
+        <li><span style="color: #c72100;background-color: #c5bdbd;">After above steps now we can send the HTTP Get request.</span></li>
+        <li>We need to send the http Get request from the getStudents(). So, we can't write the hard coded data in this method.</li>
+        <li>For this hardcoded  small data we can't maintain the server, so I have created the JSON file and store the data into that file and JSON file Located under assets/data/student.ts. Now this file act as a serve.</li>
+        <li>I took one variable and store the json file path in that variable.</li>
+        <li>To cast that we need to ready the one format of data for that purpose we are creating one interface into APP folder like(student.ts)file.</li>
+        <li>After ready the interface jump into the service file and mouse hover on GET at that time it will return 1 observable.To receive that data required one observable.</li>
+        <br>
+        <br>
+        <img style="width: 70%;margin-top: 15px 0px;" src="../../assets/img/http3.PNG">
+        <br>
+        <br>
+        <img style="width: 40%;margin-top: 15px 0px;" src="../../assets/img/http5.PNG">
+        <img style="width: 50%;margin-top: 15px 0px;" src="../../assets/img/http6.PNG">
+
+        <li>Now go to the required component and Subscribe the services.</li>
+        <img style="width: 70%;margin-top: 15px 0px;" src="../../assets/img/http4.PNG">
+
+    </ul>
+
+</div>
